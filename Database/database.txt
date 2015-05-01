@@ -1,0 +1,36 @@
+  public void createDB()
+		{
+			  try
+			  {
+				   myDB = this.openOrCreateDatabase("mousedate.db", MODE_PRIVATE, null);
+				   
+				   myDB.execSQL("CREATE TABLE IF NOT EXISTS movement " +
+				   		"(leftTurn VARCHAR, rightturn VARCHAR, totalturns VARCHAR);");
+			  }
+			  catch(Exception e) 
+			  {
+				   Log.e("Error", "Error", e);
+				  } finally {
+				   if (myDB != null)
+				    myDB.close();
+			  }
+		}
+    public void insert(int leftTurn,int rightTurn,int totalTurns)
+    {
+    	try
+    	{
+    		myDB = this.openOrCreateDatabase("mousedate.db", MODE_PRIVATE, null);    	
+    		myDB.execSQL("INSERT INTO movement (leftTurn, rightturn,totalturns) " +
+    				"values ('"+leftTurn+"','"+rightTurn+"'," +
+		   		"'"+totalTurns+"');");
+    	}
+    	catch(Exception e)
+    	{
+    		 Log.e("Error2", "Error2", e);
+    	}
+    	finally 
+    	{
+		   if (myDB != null)
+		    myDB.close();
+    	}
+    }
