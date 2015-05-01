@@ -1,0 +1,8 @@
+• PowerPoint or alternate presentation slides.
+• 30 second Hardware Build video, 30 second Computer System Project pitch video.
+• A 5x7” Placard in Microsoft Publisher format that includes the project title, 
+team member names, highlighted specifications/functions, 
+and a photo of the actual project for printing on foam core to support the Demonstration. 
+When named ProjectName_DRAFT.pub it will not be printed, 
+if named ProjectName_FINAL pub a week or more prior to demonstrations 
+a copy may be taken of which printing will be considered
